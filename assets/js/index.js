@@ -75,17 +75,22 @@ console.log(`Hola Sr. ${nombre}, es verdad que sus apellidos son, ${primer_apell
 
 //tabla de multiplicar
 
-let getNumber;
-getNumber = prompt("Give me a number to multiply");
+// let getNumber;
+// getNumber = prompt("Give me a number to multiply");
 
-let getNumberParsed;
-getNumberParsed = parseInt(getNumber)
+// let getNumberParsed;
+// getNumberParsed = parseInt(getNumber)
 
+let x;
 
-for (let i = 1; i < 11; i++) {
-    document.write(`
-        <ul>
-            <li>${getNumberParsed} x ${i} = ${getNumberParsed * i}</li>
-        </ul>
-    `);
+for (let x = 1; x < 11; x++) {
+    for (let i = 1; i < 11; i++) {
+        document.write(`
+            <ul>
+                <li>${x} x ${i} = ${x * i}</li>
+            </ul>
+        `);
+    }
+    
 }
+
