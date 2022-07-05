@@ -81,7 +81,6 @@ getNumber = prompt("Give me a number to multiply");
 let getNumberParsed;
 getNumberParsed = parseInt(getNumber)
 
-// let multiplers = ["1", "2", "3", "4", "5"]
 
 for (let i = 1; i < 11; i++) {
     document.write(`
