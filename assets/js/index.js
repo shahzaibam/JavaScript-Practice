@@ -2,11 +2,11 @@ let text = "AAABBBCCCDDDEEEFFFGGGHHHIIIJJJKKKLLLMMMNNNOOO";
 console.log(text.length);
 
 let stri = "Bananas, Kiwis";
-let particio = stri.slice(7,14);
+let particio = stri.slice(7, 14);
 console.log(particio);
 
 let palabra = "Shzaib";
-console.log(palabra.replace("Shzaib","Shah Zaib"));
+console.log(palabra.replace("Shzaib", "Shah Zaib"));
 
 let palabra_dos = "quiero ser mayuscula";
 console.log(palabra_dos.toUpperCase());
@@ -84,11 +84,12 @@ console.log(`Hola Sr. ${nombre}, es verdad que sus apellidos son, ${primer_apell
 for (let x = 1; x < 11; x++) {
     for (let i = 1; i < 11; i++) {
         document.write(`
+        <div>
             <ul>
                 <li>${x} x ${i} = ${x * i}</li>
             </ul>
+        </div>
         `);
     }
-    
 }
 
