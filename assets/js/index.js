@@ -112,20 +112,37 @@ console.log(cars.length)
 //     `)
 // }
 
-for (let i=0; i<11; i++) {
-    cars.push(prompt(`${i+1} Escribe diez coches`))
+// for (let i=1; i<11; i++) {
+//     cars.push(prompt(`${i} Escribe diez coches`))
     
-    document.write(`
-        <p>
-            ${i +1}. ${cars[i]}
-        </p> <br/>
-    `)
+//     document.write(`
+//         <p>
+//             ${i}. ${cars[i-1]}
+//         </p> <br/>
+//     `)
+// }
+
+// console.log(cars[2])
+
+// console.log(cars.length)
+// document.write(cars.length)
+
+const num = [3,4,1,2]
+
+function bubbleSort (n) {
+    for(let i=0; i<n.length-1; i++){
+        for(let j=0; j<n.length-1; j++){
+            if(n[j] > n[j+1]) {
+                let aux = n[j]
+                n[j] = n[j+1]
+                n[j+1] = aux
+            }
+        }
+    }
+    return n;
 }
 
-console.log(cars[2])
-
-console.log(cars.length)
-document.write(cars.length)
+console.log(bubbleSort(num))
 
 
 
