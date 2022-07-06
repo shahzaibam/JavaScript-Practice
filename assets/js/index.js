@@ -127,22 +127,46 @@ console.log(cars.length)
 // console.log(cars.length)
 // document.write(cars.length)
 
-const num = [3,4,1,2]
+// const num = [3,4,1,2]
+
+// function bubbleSort (n) {
+//     for(let i=0; i<n.length-1; i++){
+//         for(let j=0; j<n.length-1; j++){
+//             if(n[j] > n[j+1]) {
+//                 let aux = n[j]
+//                 n[j] = n[j+1]
+//                 n[j+1] = aux
+//             }
+//         }
+//     }
+//     return n;
+// }
+
+// console.log(bubbleSort(num))
+
+//          [0,1,2,3,4,5,6]
+const num = [2,1,10,5,4,3,0]
+//           1,2,5,4,3,0,10 --> primera vuelta,, índice 0 del for 1
+//           1,2,4,3,0,5,10 --> segunda vuelta,, índice 1 del for 1
+//           1,2,3,0,4,5,10 --> tercera vuelta,, índice 2 del for 1
+//           1,2,0,3,4,5,10 --> cuarta vuelta,, índice 3 del for 1
+//           1,0,2,3,4,5,10 --> quinta vuelta,, índice 4 del for 1
+//           0,1,2,3,4,5,10 --> sexta vuelta,, índice 5 del for 1
 
 function bubbleSort (n) {
-    for(let i=0; i<n.length-1; i++){
-        for(let j=0; j<n.length-1; j++){
-            if(n[j] > n[j+1]) {
+    for (let i = 0; i < n.length - 1; i++) {
+        for (let j = 0; j < n.length - 1; j++) {
+            if (n[j] > n[j+1]) {
                 let aux = n[j]
                 n[j] = n[j+1]
                 n[j+1] = aux
-            }
-        }
+            };
+        };
     }
     return n;
 }
+console.log(bubbleSort(num));
 
-console.log(bubbleSort(num))
 
 
 
