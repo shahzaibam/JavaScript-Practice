@@ -100,16 +100,35 @@ console.log(`Hola Sr. ${nombre}, es verdad que sus apellidos son, ${primer_apell
 const cars = []
 console.log(cars.length)
 
-cars.push("Saab", "Volvo", "Seat", "Mercedes", "Bugatti", "Range Rover", "Honda", "Ferrari", "Ford", "Peugeot")
-console.log(cars.length)
+// cars.push("Saab", "Volvo", "Seat", "Mercedes", "Bugatti", "Range Rover", "Honda", "Ferrari", "Ford", "Peugeot")
+// console.log(cars.length)
 
-for (let i = 0; i < cars.length; i++) {
+// for (let i = 0; i < cars.length; i++) {
+//     document.write(`
+//         <ul>
+//             <li> ${cars[i]} </li>
+//         </ul>
+
+//     `)
+// }
+
+for (let i=0; i<11; i++) {
+    cars.push(prompt(`${i+1} Escribe diez coches`))
+    
     document.write(`
-        <ul>
-            <li> ${cars[i]} </li>
-        </ul>
-
+        <p>
+            ${i +1}. ${cars[i]}
+        </p> <br/>
     `)
 }
+
+console.log(cars[2])
+
+console.log(cars.length)
+document.write(cars.length)
+
+
+
+
 
 
