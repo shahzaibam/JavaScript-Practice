@@ -81,15 +81,35 @@ console.log(`Hola Sr. ${nombre}, es verdad que sus apellidos son, ${primer_apell
 // let getNumberParsed;
 // getNumberParsed = parseInt(getNumber)
 
-for (let x = 1; x < 11; x++) {
-    for (let i = 1; i < 11; i++) {
-        document.write(`
-        <div>
-            <ul>
-                <li>${x} x ${i} = ${x * i}</li>
-            </ul>
-        </div>
-        `);
-    }
+// for (let x = 1; x < 11; x++) {
+//     for (let i = 1; i < 11; i++) {
+//         document.write(`
+//         <div>
+//             <ul>
+//                 <li>${x} x ${i} = ${x * i}</li>
+//             </ul>
+//         </div>
+//         `);
+//     }
+// }
+
+// var lent = new Array(4);
+// console.log(lent.length)
+
+
+const cars = []
+console.log(cars.length)
+
+cars.push("Saab", "Volvo", "Seat", "Mercedes", "Bugatti", "Range Rover", "Honda", "Ferrari", "Ford", "Peugeot")
+console.log(cars.length)
+
+for (let i = 0; i < cars.length; i++) {
+    document.write(`
+        <ul>
+            <li> ${cars[i]} </li>
+        </ul>
+
+    `)
 }
+
 
