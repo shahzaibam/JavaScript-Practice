@@ -19,7 +19,7 @@
     <!-- Encabezado -->
     <!-- Navegador -->
     <!-- Cuerpo -->
-    <div class="cont">
+    <!-- <div class="cont">
         <table>
             <tr>
                 <td colspan="4">
@@ -65,11 +65,99 @@
             </tr>
         </table>
     </div>
-    <!-- Pie -->
-    <!-- JavaScript -->
+     Pie 
+    JavaScript -->
 
-    <script src="/assets/js/index.js"></script>
-    <script src="./assets/js/calculadora.js"></script>
+    <div style="padding: 10px;">
+        <form name="contactForm" action="">
+
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" onblur="validateName()" id="name" name="name">
+                <div id="nameErr"></div>
+            </div>
+
+            <div>
+                <label for="surname">Surname</label><br>
+                <input type="text" id="surname" name="surname">
+            </div>
+
+            <div>
+                <label for="dni">Dni</label><br>
+                <input type="text" onblur="validarDNI()"id="dniErr" name="dni">
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="telephone">Phone Number</label><br>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+
+            <div>
+                <label for="fechaN">F. Nacimiento</label><br>
+                <input type="date" id="fechaN" name="fechaN">
+
+            </div>
+
+            <div>
+                <label for="pais">País</label><br>
+                <select name="pais" id="pais">
+                    <option>select</option>
+                    <option>Australia</option>
+                    <option>Pakistan</option>
+                    <option>United Kingdom</option>
+                    <option>United States of America</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="genero">genero</label> <br>
+                <label>
+                    <input type="checkbox" value="hombre" name="genero"> hombre
+                </label>
+
+                <label>
+                    <input type="checkbox" value="mujer" name="genero"> mujer
+                </label>
+
+                <label>
+                    <input type="checkbox" value="toros" name="genero"> genero
+                </label>
+            </div>
+
+            <div>
+                <label for="hobbies"> Hobbies</label><br/>
+                <label>
+                    <input type="checkbox" value="toros" name="vicio"> toros
+                </label>
+
+                <label>
+                    <input type="checkbox" value="cantar" name="vicio"> cantar
+                </label>
+
+                
+                <label>
+                    <input type="checkbox" value="deporte" name="vicio"> deporte
+                </label>
+
+            </div>
+
+            <div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="./assets/js/dni.js"></script>
+
+    <!-- <script src="/assets/js/index.js"></script>
+    <script src="./assets/js/calculadora.js"></script> -->
 </body>
 
 </html>
