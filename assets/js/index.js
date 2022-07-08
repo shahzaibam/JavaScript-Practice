@@ -144,27 +144,15 @@
 // console.log(bubbleSort(num))
 
 //          [0,1,2,3,4,5,6]
-// const num = [2,1,10,5,4,3,0]
-//           1,2,5,4,3,0,10 --> primera vuelta,, índice 0 del for 1
-//           1,2,4,3,0,5,10 --> segunda vuelta,, índice 1 del for 1
-//           1,2,3,0,4,5,10 --> tercera vuelta,, índice 2 del for 1
-//           1,2,0,3,4,5,10 --> cuarta vuelta,, índice 3 del for 1
-//           1,0,2,3,4,5,10 --> quinta vuelta,, índice 4 del for 1
-//           0,1,2,3,4,5,10 --> sexta vuelta,, índice 5 del for 1
+const num = [2,1,10,5,4,3,0]
+//          1,2,5,4,3,0,10 --> primera vuelta,, índice 0 del for 1
+//          1,2,4,3,0,5,10 --> segunda vuelta,, índice 1 del for 1
+//          1,2,3,0,4,5,10 --> tercera vuelta,, índice 2 del for 1
+//          1,2,0,3,4,5,10 --> cuarta vuelta,, índice 3 del for 1
+//          1,0,2,3,4,5,10 --> quinta vuelta,, índice 4 del for 1
+//          0,1,2,3,4,5,10 --> sexta vuelta,, índice 5 del for 1
 
-const num = []
-
-for (let i=1; i<15; i++) {
-    num.push(prompt(`${i}. escribe un numero`)) 
-}
-
-console.log(num)
-document.write(`
-    ${num} <br> <br> 
-    ${num.length} <br> <br>
-    `);
-
-function bubbleSort (n) {
+let b = function (n) {
 
     for (let i = 0; i < n.length - 1; i++) {
         for (let j = 0; j < n.length - 1; j++) {
@@ -176,16 +164,51 @@ function bubbleSort (n) {
         };
     }
     return n;
+
 }
-console.log(bubbleSort(num))
+console.log(b(num))
 
-document.write(`<br/> <br/>
-    ${bubbleSort(num)}
-    `);
+// const num = []
+
+// for (let i=1; i<15; i++) {
+//     num.push(prompt(`${i}. escribe un numero`)) 
+// }
+
+// console.log(num)
+// document.write(`
+//     ${num} <br> <br> 
+//     ${num.length} <br> <br>
+//     `);
+
+// function bubbleSort (n) {
+
+//     for (let i = 0; i < n.length - 1; i++) {
+//         for (let j = 0; j < n.length - 1; j++) {
+//             if (n[j] > n[j+1]) {
+//                 let aux = n[j]
+//                 n[j] = n[j+1]
+//                 n[j+1] = aux
+//             };
+//         };
+//     }
+//     return n;
+// }
+// console.log(bubbleSort(num))
+
+// document.write(`<br/> <br/>
+//     ${bubbleSort(num)}
+//     `);
 
 
 
 
+const fruits = ["banana", "apple", "grape"]
 
+let text = "<ul>";
+fruits.forEach(myFunction)
+text += "</ul>"
+document.write(text)
 
-
+function myFunction(value) {
+    text += "<li>" + value + "</li>"
+}
