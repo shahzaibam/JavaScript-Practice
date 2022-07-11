@@ -2,9 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-/* body{
+
+body.black {
     background-color: black;
-} */
+}
 input.result{
     width: 240px;
     height: 30px;

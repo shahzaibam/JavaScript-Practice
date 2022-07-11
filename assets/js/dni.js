@@ -61,27 +61,46 @@
 
 // show()
 
-var ordenar = []
+// var ordenar = []
  
-for (var i=0; i<6; i++) {
-    ordenar.push(prompt(i + 1. + " escribe un numero"))
-}
+// for (var i=0; i<2; i++) {
+//     ordenar.push(prompt(i + 1. + " escribe un numero"))
+// }
 
 
-function ordenarNumber(ordenar) {
-    for(let i=0; i<ordenar.length - 1; i++) {
-        for(let j = 0; j<ordenar.length - 1; j++) {
-            if(ordenar[j] > ordenar[j+1]) {
-                let aux = ordenar[j]
-                ordenar[j] = ordenar[j+1]
-                ordenar[j+1] = aux;
-            }
-        }
-    }
+// function ordenarNumber(ordenar) {
+//     for(let i=0; i< ordenar.length - 1; i++) {
+//         for(let j = 0; j< 10; j++) {
+//             if(ordenar[j] > ordenar[j+1]) {
+//                 let aux = ordenar[j]
+//                 ordenar[j] = ordenar[j+1]
+//                 ordenar[j+1] = aux;
+//             }
+//         }
+//     }
 
-    return ordenar;
-}
+//     return ordenar;
+// }
 
-console.log(ordenarNumber(ordenar))
+// console.log(ordenarNumber(ordenar))
+
+
+const blackBtn = document.getElementById("black")
+const whiteBtn = document.getElementById("white")
+const body = document.getElementsByTagName("body")
+
+blackBtn.addEventListener("click", function darkMode(event) {
+
+    document.body.classList.toggle = "black"
+
+
+});
+
+// whiteBtn.addEventListener("click", function lightMode(event) {
+
+//     event.target.style.background = "black"
+
+
+// });
 
 
