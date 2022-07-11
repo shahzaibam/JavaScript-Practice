@@ -1,49 +1,82 @@
 // var letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
-// function printError(elemId, mensaje) {
-//     document.getElementById(elemId).innerHTML = mensaje;
-// }
-
-// let numMax = 10;
-
-// function validateName(numMax) {
-//     var name = document.getElementById("name").value;
-
-//     if(name == "") {
-//         printError("nameErr","please enter your name");
-//     }else {
-//         //validar longitud
-
-//         if(name.length > numMax  ) {
-//             printError("dniErr", "numero muy largo")
-//         }
-
-//         var regex = /^[a-zA-Z\s]+$/;
-//         if(regex.test(name) === false){
-//             printError("nameErr", "el patron no se cumple")
-//         }else{
-//             printError("nameErr","");
-    
-//         }
-
-//     }
-// }
+function printError(elemId, mensaje) {
+    document.getElementById(elemId).innerHTML = mensaje;
+}
 
 
-// function validarDNI() {
-//     var numDni = document.getElementById("dni").value;
-//     var letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
-//     var numero = parseInt.numDni.substring(0, numDni.length - 2)
-//     var letra_intro = numDni(numDni.length - 1)
-//     var letra_ok = letras[numero%23]
-//     if(letra_intro != letra_ok) {
-//         printError("dniErr", "letra Dni eeronea");
-//     }else {
-//         printError("dniErr", "")
-    
-//     }
-// }
+function validateName(numMax) {;
+    var name = document.getElementById("name").value;
+
+    if (name == "") {
+        printError("nameErr", "please enter your name");
+    } else {
+        //validar longitud
+
+        if (name.length > 12) {
+            printError("nameCorrect", "")
+            printError("nameErr", "numero muy largo")
+        } var regex = /^[a-zA-Z\s]+$/;
+        if (regex.test(name) == false) {
+            printError("nameCorrect", "")
+            printError("nameErr", "el patron no se cumple")
+        } else {
+            printError("nameErr", "")
+            printError("nameCorrect", "Correcto");
+
+        }
+
+    }
+}
+
+
+function validarDni() {
+    // var numDni = document.getElementById("dniErr").value;
+
+    // console.log("hola")
+
+    // console.log(numDni.length)
+
+    // var numero = parseInt.numDni.substring(0, numDni.length - 2)
+
+    // var numeroDni = prompt("escribe tu numero de DNI");
+    var letraDni  = prompt("escribe tu letra de DNI");
+        // letraDni = letraDni.toLocaleUpperCase()
+
+
+    if (numeroDni.length < 0 || numeroDni.length > 99999999) {
+        document.write("Numero DNI erroneo.");
+    } else {
+        var letra_capturada = letraDni[numeroDni % 23];
+        // if (letra_capturada != ["A",]) {
+        //     document.write("Letra DNI incorrecta. ");
+        // }
+        // else {
+        //     document.write("Numero y letra del DNI son correctos. ");
+        // }
+
+        var letras = ["a","b","c"]
+
+        letras.forEach((item) => {
+            for(let i = 0; i<letras.length - 1; i++){
+                
+                if(item[i] != letra_capturada) {
+                    document.write("correcto")
+                }
+                else {
+                    document.write("incorrccto")
+                }
+            }
+        })
+
+        document.write("<br>");
+        document.write(" El DNI es : " + numeroDni + letraDni);
+    }
+    }
+
+validarDni()
+
 
 // var frutitas = [];
 
@@ -62,7 +95,7 @@
 // show()
 
 // var ordenar = []
- 
+
 // for (var i=0; i<2; i++) {
 //     ordenar.push(prompt(i + 1. + " escribe un numero"))
 // }

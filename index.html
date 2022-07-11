@@ -74,7 +74,8 @@
             <div>
                 <label for="name">Name</label><br>
                 <input type="text" onblur="validateName()" id="name" name="name">
-                <div id="nameErr"></div>
+                <div class="error" id="nameErr"></div>
+                <div class="correct" id="nameCorrect"></div>
             </div>
 
             <div>
@@ -84,7 +85,7 @@
 
             <div>
                 <label for="dni">Dni</label><br>
-                <input type="text" onblur="validarDNI()"id="dniErr" name="dni">
+                <input type="text" id="dniErr" name="dni">
             </div>
 
             <div>
@@ -149,6 +150,8 @@
             <div>
 
             </div>
+
+            <button type="submit">sub</button>
 
         </form>
     </div>

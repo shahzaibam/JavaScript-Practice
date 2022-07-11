@@ -41,3 +41,11 @@ button.col2:hover{
     background-color: darkorange;
     color: white;
 }
+
+.error {
+    color: red;
+}
+
+.correct {
+    color: green;
+}
