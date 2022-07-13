@@ -49,3 +49,15 @@ button.col2:hover{
 .correct {
     color: green;
 }
+
+.btns {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    margin: auto;
+}
