@@ -1,5 +1,5 @@
 $("#car").on("click", function() {
-    $("#car").animate({left: "800px"})
+    $("#car").animate({left: "800px"}, "fast")
     
     // $("#car").animate({left: "0"})
     
