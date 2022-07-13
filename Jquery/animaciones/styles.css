@@ -1,0 +1,37 @@
+body{
+    background-image: url(./img/superficie-carretera-cielo-paisaje-natural_1417-7174.webp);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#car {
+    position: absolute;
+    top: 300px;
+}
+
+#car img{
+    height: 300px;
+    width: 400px;
+}
+
+#putin {
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+#putin img {
+    height: 200px;
+    width: 400px;
+}
+
+#reload{
+    background: transparent;
+    border: none;
+}
+
+#reload img{
+    height: 200px;
+    width: 200px;
+}
