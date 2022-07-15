@@ -1,5 +1,5 @@
 $("#car").on("click", function() {
-    $("#car").animate({left: "800px"}, "fast")
+    $("#car").animate({left: "690px"}, "fast")
     
     // $("#car").animate({left: "0"})
     
@@ -8,8 +8,11 @@ $("#car").on("click", function() {
 })
 
 $("#car").on("click", function() {
-    $("#putin").fadeOut("slow")
-    
+    // $("#putin").animate({top: "100px"}, "slow")
+    console.log($("#car").position().left)
+    if($("#car").position().left >= 8) {
+        $("#putin").animate({left: "900px"}, "slow")
+    }
 })
 
 $("#reload").on("click", function() {
