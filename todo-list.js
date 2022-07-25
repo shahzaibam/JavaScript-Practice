@@ -22,15 +22,10 @@ function addTodo() {
 }
 
 
-// function removeTodo() {
-//     document.getElementById("delete").addEventListener("click", todos.splice(1,2))
-// }
+function removeTodo() {
 
-// todos.forEach(element => {
-//     todoListAdd.innerHTML += `<p>${element}</p>`
-// });
-
-
+}
 
 // console.log(inputTodo.value)
+
 
