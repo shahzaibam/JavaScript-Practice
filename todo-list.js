@@ -3,7 +3,7 @@ let todoListAdd = document.getElementById("todo-list")
 const todos = [];
 
 function addTodo() {
-    if (inputTodo.value == "") {
+    if (inputTodo.value == "") { 
         alert("porfavor escribe algo")
     } else {
         alert(inputTodo.value)
